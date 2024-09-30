@@ -117,7 +117,7 @@ function App() {
         <h1 className="text-3xl font-bold">Time Dilation Simulator</h1>
         <p className="mt-2 inline max-w-3xl text-lg">
           According to Einstein's Special Relativity, as an object's velocity
-          approaches light speed, time slows down relative to a Stationary
+          approaches light speed, time slows down relative to a stationary
           observer.
         </p>
         <div className="flex flex-col items-center sm:flex-row">
