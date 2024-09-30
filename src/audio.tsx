@@ -7,10 +7,10 @@ export const AudioControl = ({ timeFactor = 1 }) => {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.playbackRate = 1 / timeFactor; // Set playbackRate from timeFactor prop
+      audioRef.current.playbackRate = 1 / timeFactor;
       audioRef.current.preservesPitch = false;
     }
-  }, [timeFactor]); // Re-run effect whenever timeFactor changes
+  }, [timeFactor]);
 
   const handlePlayPause = () => {
     if (audioRef.current) {

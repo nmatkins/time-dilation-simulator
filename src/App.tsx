@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import AudioControl from "./audio";
 
 function App() {
-  const C = 299792458;
   const [currentVelocity, setCurrentVelocity] = useState(0);
+  const C = 299792458;
   const percentC = ((currentVelocity * 100) / C).toFixed(2);
-  const useClock = false;
 
   const speedChoices = [
     { label: "0 m/s", speed: 0 },
@@ -23,6 +22,8 @@ function App() {
     1 / Math.sqrt(1 - (currentVelocity * currentVelocity) / (C * C));
 
   function Clock({ timeFactor = 1, label = "" }) {
+    const useClock = false; //to make faces 1 to 12
+
     return (
       <div className="flex flex-col items-center justify-between gap-y-4 text-lg font-bold">
         {label}
@@ -34,16 +35,7 @@ function App() {
             <div className="h-[45%] w-1 rounded bg-white"></div>
             <div className="h-[45%] w-1"></div>
           </div>
-          <div
-            className="absolute z-40 flex h-64 w-64 flex-col items-center justify-center rounded-full"
-            style={
-              {
-                // animation: `spin ${60 * timeFactor * 12}s linear infinite`,
-              }
-            }
-          >
-            {/* <div className="h-1 w-full bg-white"></div> */}
-            {/* <div className="h-[49%]"></div> */}
+          <div className="absolute z-40 flex h-64 w-64 flex-col items-center justify-center rounded-full">
             <div className="h-4 w-4 rounded-full bg-white"></div>
           </div>
 
@@ -181,7 +173,7 @@ function App() {
       <div className="flex h-full items-center justify-center gap-1 pb-3 text-sm text-slate-300">
         Made by Nick Atkins -
         <a
-          href="http://www.github.com/nmatkins"
+          href="https://github.com/nmatkins/time-dilation-simulator"
           className="underline opacity-80 hover:opacity-100"
         >
           View on Github
