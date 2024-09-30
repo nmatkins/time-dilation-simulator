@@ -1,7 +1,7 @@
 # Time Dilation Simulator
 
 ### Overview
-The **Time Dilation Simulator** is an interactive app that demonstrates the relativistic effects of time dilation as described by Einstein's Theory of Special Relativity. As an object's velocity approaches the speed of light (C), time slows down relative to a stationary observer.
+The [Time Dilation Simulator](https://time-dilation-simulator.vercel.app/) is an interactive app that demonstrates the relativistic effects of time dilation as described by Einstein's Theory of Special Relativity. As an object's velocity approaches the speed of light (C), time slows down relative to a stationary observer.
 
 This effect is quantified by the **Lorentz factor** (γ), which describes how time is experienced by a moving object compared to someone at rest.
 
