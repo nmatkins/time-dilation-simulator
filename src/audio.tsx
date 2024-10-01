@@ -9,6 +9,7 @@ export const AudioControl = ({ timeFactor = 1 }) => {
     if (audioRef.current) {
       audioRef.current.playbackRate = 1 / timeFactor;
       audioRef.current.preservesPitch = false;
+      audioRef.current.currentTime = 0;
     }
   }, [timeFactor]);
 
