@@ -170,7 +170,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex h-full items-center justify-center gap-1 pb-3 text-sm text-slate-300">
+      {/* <div className="flex h-full items-center justify-center gap-1 pb-3 text-sm text-slate-300">
         Made by Nick Atkins -
         <a
           href="https://github.com/nmatkins/time-dilation-simulator"
@@ -178,7 +178,7 @@ function App() {
         >
           View on Github
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
